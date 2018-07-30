@@ -5,7 +5,7 @@ import { removeCar } from '../actions'
 const RemoveCar = ({ dispatch }) => {
   return (
     <div>
-        <button type="submit" onClick={() => removeCar()}>
+        <button type="submit" onClick={() => dispatch(removeCar())}>
             Remove Car
         </button>
     </div>

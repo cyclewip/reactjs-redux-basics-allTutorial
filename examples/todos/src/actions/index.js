@@ -1,5 +1,8 @@
 let nextTodoId = 1
-let nrOfCars = 4
+let nrOfCars = 3
+
+
+
 
 export const addTodo = text => ({
   type: 'ADD_TODO',
@@ -13,9 +16,10 @@ export const addCar = text => ({
   text
 })
 
-export const removeCar  = ({
+export const removeCar = text => ({
   type: 'REMOVE_CAR',
   id: nrOfCars--,
+  text: ''
 })
 
 export const setVisibilityFilter = filter => ({
